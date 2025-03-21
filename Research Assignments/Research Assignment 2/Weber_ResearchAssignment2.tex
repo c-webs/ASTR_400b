@@ -1,0 +1,62 @@
+\documentclass[fleqn,usenatbib]{mnras}
+
+\usepackage{newtxtext,newtxmath}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}	
+\usepackage{amsmath}	
+
+\title[Short title, max. 45 characters]{Weber Research Assignment 2}
+
+\author{Colin Weber}
+\date{3/20/2025}
+\begin{document}
+\label{firstpage}
+\pagerange{\pageref{firstpage}--\pageref{lastpage}}
+\maketitle
+
+
+\section{Introduction}
+
+The dark matter profiles of satellite galaxies are very important to understanding how satellite galaxies change during galaxy mergers. As a galaxy comes in close proximity to a much smaller galaxy, the shape of the dark matter structure throughout the galaxy changes rapidly with time.
+
+
+        Understanding how the dark matter profile evolves throughout a satellite galaxy during the merger of its host galaxy and another galaxy is key to our understanding of how dark matter functions in the universe, as well as how it must be distributed throughout the galaxy. With these we can more accurately determine the gravitational pull of galaxies on one another during a galactic merger.
+
+        At this point, we know for sure that dark matter has a gravitational pull on the mass around it. Dark matter accounts for roughly 85 percent of the mass in the universe. This means that dark matter is really important to understanding how galaxies evolve as they collide, since dark matter accounts for most of the galaxy. We have also observed evidence of dark matter interacting differently than light during galaxy collisions (\citet{Clowe2006}). This leaves us to believe that dark matter could be collisionless.
+        
+\begin{figure}
+                \centering
+                \includegraphics[width=0.5\linewidth]{Screenshot 2025-03-20 230145.png}
+                \label{fig:enter-label}
+            \caption{on the left is a contour diagram of the mass distribution of the galaxy measured using gravitational lensing. On the right is an x-ray of the same galaxy}
+            \end{figure}
+                        
+
+        One of the primary questions relating to dark matter is its distribution. Depending on different models, dark matter is believed to be distributed in either many smaller clumps or fewer smaller clumps (\citet{Banik2018}). Another question that we have is whether or not clumps of dark matter can exist as galaxies of their own. Dark matter galaxies could explain the irregular shapes of some galaxies. This could be what is causing the irregular shape of a stellar cluster orbiting around the Milky Way ((\citet{Erkal2017})).
+
+
+\section {proposal}
+\subsection{This Proposal}
+
+I am aiming to address two main questions in my research assignment. The first question that I am aiming to address is whether or not there is a truncation in the Dark matter density profile and how it relates to the analytic Jacobi radius. The other question that I am looking to answer is what the dark matter distribution of M33 is shaped like and how it evolves over time. 
+
+\subsection{Methods}
+For both of the questions that I am trying to answer, I am going to use the dark matter particle types, which I will select by creating an index of the particle where ptype = 1. For question 3, I am planning on creating a graph of the relationship between the dark matter particle mass at a radius $R$ from the center of mass of the galaxy. To do this, I am planning on modifying the MassEnclosed function from homework 6 to calculate the mass within an interval of $(R-c) < r < (R+c)$ of the dark matter halo, where the size of $c$ depends on how many data points I wind up using in my graph. $r$ is the distance of the particle from the galaxy's center of mass. From there I can analyze the graph to determine the Jacobi radius of M33 in our simulation and compare it to the analytical Jacobi radius, where I use an equation similar to the equation for the Jacobi radius that was used in lab 4. The main difference is that I need it to apply to both galaxies. $r_j = d(M_1/{2M_{tot}})^{1/3}$, where $M_{tot} = M_{1}+M_{2}$ is the total mass, $r_j$ is Jacobi radius, $d$ is the distance between $d_{COM1}$, the center of mass of M33 and $d_{COM2}$, the center of mass of the MW and M31 system. $d_{COM2} = (\Sigma_nr_nM_n)/(\Sigma_nM_n)$. $d = \sqrt{(d_{COM1x}-d_{COM2x})^2+(d_{COM1y}-d_{COM2y})^2+(d_{COM1z}-d_{COM2z})^2}$ For this question, I am planning on only using the first snapshot, since that is the snapshot we used in lab 4 as well. 
+
+        For Question 4 I am planning on making 3D graphs of the dark matter using the methods we learned in Lab 7. I am planning on creating a contour fitting for all possible combinations of the x,y, and z axes. I am going to be creating both position and radial velocity graphs, as a radial velocity graph could give me insight into how the shape is changing for a specific snapshot. Since I need to create contour diagrams for each of the snapshots that I use, I do not plan to use all of the snapshots. Currently, I want to use six different snapshots. I am planning on using one at snapshot 000, two that take place during the merger, one that takes place once the galaxies have merged, and two that take place after the merger. This way, I will be able to analyze the structure of the dark matter halo of M33 at several important points during the simulation to see how they evolve.
+        \begin{figure}
+                \centering
+                \includegraphics[width=0.5\linewidth]{20250320_231534 (1).jpg}
+                \label{fig:enter-label}
+            \caption{ A diagram of the graphs that I am planning on making for question 4}
+            \end{figure}
+
+\subsection{Hypothesis}
+I believe that the analytical Jacobi radius and the graphed Jacobi radius should be roughly the same. The primary reason I say this is because I will be using the same data to calculate the analytical Jacobi radius and to create the graph. For question 4, I imagine that the dark matter halo will be stretched out by the addition of the force of M31’s gravity on the system. I also expect this increase in the gravitational force on M33 to cause some of the dark matter to leak out of M33 towards the Milky Way and Andromeda galaxies.
+
+
+\bibliographystyle{mnras}
+\bibliography{example} 
+\cite{}
+\label{lastpage}
+\end{document}
