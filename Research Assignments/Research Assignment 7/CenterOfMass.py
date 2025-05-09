@@ -133,7 +133,7 @@ class CenterOfMass:
         # start iterative process to determine center of mass position                                                 
         # delta is the tolerance for the difference in the old COM and the new one.    
         
-        while (change > delta):
+        while ((change > delta) & (r_max/2 > 10)):
             # select all particles within the reduced radius (starting from original x,y,z, m)
             # write your own code below (hints, use np.where)
             index2 = np.where(r_new < r_max)
@@ -183,10 +183,16 @@ class CenterOfMass:
 
             # create an array  to store the COM position                                                                                                                                                       
             p_COM = np.array([x_COM, y_COM, z_COM])
-
+            #print(f'change {change}')
+            #print (f'r_max: {r_max}')
+            #print(f'rnew is {r_COM}')
+            #print(p_COM)
+            #print(len(x2))
+            r_max_final = (r_max*2)
         # set the correct units using astropy and round all values
         # and then return the COM positon vector
         # write your own code below
+        #print(r_max_final)
         return np.around(p_COM, 2)*u.kpc
         
         

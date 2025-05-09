@@ -1,0 +1,180 @@
+\documentclass[fleqn,usenatbib]{mnras}
+
+\usepackage{newtxtext,newtxmath}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}	
+\usepackage{amsmath}	
+
+\title{The Evolution Of The Dark Matter Halo Of The Triangulum Galaxy}
+
+\author{Colin Weber}
+\date{4/11/2025}
+\begin{document}
+\label{firstpage}
+\pagerange{\pageref{firstpage}--\pageref{lastpage}}
+\maketitle
+\begin{abstract}
+During a galaxy merger, the shape of the dark matter halo of a nearby satellite can be noticeably altered due to the tidal forces of the merging galaxies. Understanding how the shape of the halo evolves throughout the merger can give us a better understanding of how dark matter interacts with both visible matter and other dark matter. Using a simulation of the future merger between M31 and the Milky Way galaxies used for \citet{vanderMarel2012}, I am able to examine how the dark matter halo of a satellite galaxy evolves as its host galaxy and another galaxy merge. I am examining how the dark matter halo of M33 evolves within it's Jacobi radius from M31 as M31 merges with the Milky Way Galaxy. Through examining this simulation, I found that the dark matter halo of M33 adopts an oblate shape during the merger between M31 and the Milky Way galaxy and then evolves into a triaxial shape approximately 7 Gyrs after the start of the simulation. I also found that the mass density of the dark matter halo of M33 drops off before that analytical Jacobi radius. I then found that the tidal effects on M33 by M31 was much larger after it completed its merger with the Milky Way galaxy and its distance at apocenter decreased.
+Finally, I found that the distance between M33 and the combined galaxy of M31 and the Milky way galaxy has a direct correlation to how stretched out the particles are within an area inside of the Jacobi radius. Through these finding we are able to examine how the shapes dark matter halos evolve due to strong gravitational forces from both visible and dark matter.
+
+\end{abstract}
+\begin{keywords}
+Major Merger -- Satellite Galaxy -- Dark Matter Halo -- Halo Shape -- Oblate/Prolate/Triaxial
+
+\end{keywords}
+\section{Introduction}
+        A \textbf{dark matter halo} is a halo where where the average density of dark matter contained within the halo is larger than that of the average dark matter density of the universe. They are believed to extend much further than the visible matter in the galaxy. Since a dark matter halo has a gravitational pull on the visible matter around it, it stands to reason that the dark matter halo of a satellite galaxy would change in shape drastically due to a nearby major collision. A \textbf{satellite galaxy} is a galaxy that is gravitationally bound by a larger galaxy. A \textbf{major collision} is a collision between two galaxies of similar mass.
+
+        The evolution of the \textbf{halo shape}, the shape of the dark matter halo, of satellite galaxies during a nearby major merger is very important to understanding how dark matter and visible matter interact gravitationally. This can include where dense regions reside, how stretched out it is, its overall ellipticity, its radius, and its general shape around the rotational axis of the galaxy. The shape around the rotational axis is either prolate, oblate, or triaxial. An \textbf{oblate} shape is a spheroid that is stretched out to resemble the shape of a disk, a \textbf{prolate} shape is a spheroid that is stretched out to resemble the shape of a football, and a \textbf{triaxial} shape is a combination of an oblate and a prolate shape. With the information provided by understanding the shape of the halo, we can better understand galaxy evolution by being able to predict how the gravitational pull of the dark matter halo can reshape the galaxy. \textbf{Galaxy evolution} is how galaxies throughout the universe form, merge, and evolve over time. A \textbf{galaxy} is a gravitationally bound set of stars whose properties cannot be explained by a combination of baryons and newtons laws of gravity. The halo shape can also increase our knowledge of galaxy evolution by allowing us to more accurately determine the gravitational pull of galaxies on one another during a galactic merger. Since so much of a galaxies mass is part of the dark matter halo, it would be nearly impossible to predict how galaxies interact gravitationally without it. 
+
+        At this point, we know for sure that dark matter has a gravitational pull on the mass around it. Otherwise, galaxies wouldn't have enough of a gravitational force to hold themselves together. This dark matter accounts for roughly 85 percent of the mass in the universe. Since dark matter accounts for most of the mass in any given galaxy, it is really important to understanding how galaxies evolve as they collide. We have also observed evidence of dark matter interacting differently than light during galaxy collisions (\citet{Clowe2006}). We also know that dark matter is distributed in clumps (\citet{Banik2018}). We know that the gravitational pull of a galaxies dark matter halo can affect the shape of visible objects within a galaxy like stellar clusters as well (\citet{Erkal2017}). The dark matter halo provides a medium to slow down galaxies when they pass through each other by causing an energy loss, allowing for them to merge instead of just passing through each other. As shown in \textbf{figure 1}, we have observed that the dark matter halo of a galaxy can behave differently than the visible matter during a galaxy merger.
+        
+\begin{figure}
+                \centering
+                \includegraphics[width=1.0\linewidth]{Fig1.png}
+                \label{fig:enter-label}
+            \caption{on the left is a contour diagram of the mass distribution of the galaxy measured using gravitational lensing. On the right is an x-ray of the same galaxy. Not only does this serve as a way to map it, but it also confirms that the dark matter behaves differently than the visible mass of the galaxy due to a galaxy collision.}
+            \end{figure}
+                        
+        Many of the primary questions relating to dark matter relate to its distribution. Depending on different models, dark matter is believed to be distributed in either many smaller clumps or fewer large clumps. Dark matter could also be distributed in several different ways around the rotational axis of the galaxy. The dark matter halo around galaxies could be either a prolate, oblate, or triaxial halo. It has been theorized that dark matter clumps could exist as galaxies of their own. Dark matter galaxies could explain the irregular shapes of some galaxies. This could be what is causing the irregular shape of a stellar cluster orbiting around the Milky Way (\citet{Erkal2017}). While we know that it can be affected differently than visible mass during a galaxy merger, we don't know why the dark matter halo can behave differently. Another big unknown relating to dark matter is how it can be transferred from one galaxy to another. We are not sure how the \textbf{Jacobi radius} for the dark matter halo of a satellite galaxy matches what we would expect from an analytical solution of the Jacobi radius equation. The Jacobi radius is the maximum distance a gravitationally object can go until it is stolen by the gravitational pull of another object. How the Jacobi radius evolves as a third body is introduced into the system is also something that remains a mystery. Our inability to directly observe dark matter makes it difficult to attempt to answer these questions. Because we can't directly observe the dark matter halo around each galaxy, we need to observe how the visible matter enclosed within the halo evolves in ways that can't be explained without the existence of dark matter halos, as done by \citet{Clowe2006} and \citet{Erkal2017}. We can use these methods to help determine dark matter halo shapes that influence visible matter in ways that we have observed. Since dark matter has a strong gravitational pull, we can also observe the gravitational lensing caused by the galaxy to help determine the shape of the halo as done by \citet{Clowe2006}.
+
+
+\section {proposal}
+        I am aiming to analyze the shape of the dark matter halo around the Triangulum galaxy (M33) throughout the merger of the Milky Way and Andromeda (M31) galaxies to see how it evolves over time. M33 is a satellite galaxy of the Milky Way, meaning that it will be greatly affected by the merger between M31 and the Milky Way. The main properties of the dark matter halo shape that I am analyzing throughout the galactic merger are the shape around its orbital axis (oblate, prolate, triaxial), how the halo appears to stretch and contract within the Jacobi radius, and how the drop off in dark matter density of the halo compares to the analytical Jacobi radius of the Triangulum galaxy.
+
+        This project aims to address the shape of the halo about its orbital axis. It also aims to address how the analytical Jacobi radius compares to the simulated radius and how both of them evolve over time as the distances of the Milky Way, M31, and M33 change during the merger.
+
+
+        This project will help us understand how the mass of galaxies evolves over time. It also helps us understand how a dark matter halo behaves when the nearby mass suddenly increases by a large amount. It will help us understand the behavior of satellite galaxy dark matter halos as they reaches the pericenter and apocenter of their orbits. The shape of the halo could have large effects on the gravitational pull between M33 and the merged Milky Way and M31 galaxy.
+
+
+
+\section{Methodology}
+        The simulations being used are the ones that were used in ((\citet{vanderMarel2012})). Here an \textbf{N-body} simulation of the Milky Way, M31, and M33 system was modeled. An \textbf{n-body} simulation is a simulation of how 3 or more gravitationally bound objects with initial masses and velocities evolve with time.
+
+        I am using the dark matter particles from the M33 galaxy in the simulation data. Since I am looking at the general shape of the galaxy, I believe that it is best to use the VLowRes simulation data to allow me to run the code at a much quicker rate. I am analyzing data from every 5th snapshot. However, I also analyze four snapshots in more depth than the others. Those snapshots are the 000, 300, 380, and 705 snapshots. Snap 000 is the start of the simulation, so it is very important to understand its shape in order to see how it evolves over time. Snaps 300 and 380 were chosen because of how close they are in time to the galaxy merger. Snap 300 is a point where M31 is at pericenter. In snap 380, M33 is at apocenter. Snap 705 is an apocenter snap that was chosen because it takes place a significant amount of time after the merger.
+
+
+        The first thing my code computes is the distance between the M31 and M33 galaxies and identify the apocenters and pericenters of M33's orbit around M31. My code also computes both the center of mass and rotational axes that the dark matter halo rotates around at a specific snapshot, then it redefines each particle in terms of a new coordinate system with the center of mass at the origin and the z-axis as the rotational axis of the galaxy. My code then computes how the mass enclosed within a cylinder along each axis changes as the radius of the cylinder increases up to the analytical Jacobi radius for a specific snapshot. The Jacobi radius can be calculated using the equation $r_j = d(M_1/{2M_{tot}})^{1/3}$. (Szebehely 1967) where $r_j$ represents the Jacobi radius, $d$ represents the distance between the host and satellite galaxies, $M_1$ is the mass of the satellite galaxy, and $M_{tot}$ is the total mass of the host galaxy enclosed within a radius $d$. Next, my code computes the average particle distance from the center of mass within a specific radius. This can be done using the equation $r_{avg} = \frac{1}{N}\sum_i^{i=N} \sqrt{x_i^2+y_i^2+z_i^2}$ for particles at a radius less than the Jacobi radius, where $i$ is the particle number, $N$ is the total number of particles within the Jacobi radius and $x_i$,$y_i$, and $z_i$ are that particles coordinates. The code also computes the average particle distance within the Jacobi radius for each cartesian coordinate individually
+
+\begin{figure}
+                \centering
+                \includegraphics[width=0.7\linewidth]{Fig2.jpg}
+                \label{fig:enter-label}
+            \caption{ Two cylinders of equal radius, r, and a length of infinity surround a prolate shape. The cylinder along the y axis clearly contains more of the object than the cylinders along the x and z axes. By using this, we can determine if the shape is prolate, oblate(two cylinders contain more mass in r than the third), or triaxial (differing masses for each cylinder)}
+            \end{figure}
+        To analyze whether or not the galaxy is oblate, prolate, or triaxial, I am running a function that computes the total mass enclosed within a cylinder along each of the 3 major axes. As presented in \textbf{figure 2}, In theory, the graph of mass enclosed for the cylinder will reach a certain threshold of total mass enclosed in one direction much more quickly than the other two if it is prolate. If two cylinders reach the threshold much more quickly than the third direction, it is likely oblate. If they all reach the threshold in very different radii, then it is likely triaxial. To measure the Jacobi radius, I am making a mass density profile of M33 and observing the radius at which a large drop off in density occurs. Then, I will compare that radius to the analytic Jacobi radius at that time. To see how the distribution of mass within the Jacobi radius evolves over time, I am plotting the average particle distance from the center of mass within the Jacobi radius at each snapshot, and graphing it to see how it evolves over time. This lets me see how stretched out the halo is. I am also graphing how the average particle distance from the center of mass within the Jacobi radius changes over time for each of the individual cartesian coordinates for the particles. This could also be used to explain the if the halo is prolate, oblate, or triaxial by telling us if the halo is compressed along a certain axis if it was a smaller average for a specific axis than the other two axes. Finally, I am graphing how the ratio between the total mas enclosed within each of the three cylinders from earlier at the Jacobi radius and the total mass contained within any cylinder at the Jacobi radius change with time. This allows me to see if the galaxy is prolate, oblate, or triaxial throughout the whole simulation and allows me to see if its shape changes with time.
+
+        I believe that the halo should be oblate within the Jacobi radius, and that the Jacobi radius will vary wildly at different points of the simulation. I expect the halo to be oblate as a result of the gravitational pull on M33 from M31 and the Milky Way. I believe that this pull will cause the halo to become elongated in a way that points towards the center of mass of the Milky Way galaxy and M31 galaxy. The Jacobi radius should change drastically as the simulation progresses. As seen in the equation of the Jacobi radius, it depends primarily on the mass and distance of the objects. The distance between M33 and M31 oscillates throughout the simulation, meaning that the Jacobi radius will change with it. During the simulation, M31 merges with the Milky Way, meaning that the total mass of the galaxy that M33 is orbiting around is very different by the end of the simulation. This should cause the actual Jacobi radius to be much smaller at the end of the simulation than the beginning of the simulation. Since M33 is suddenly going to be around considerably more mass due to the merger between M33 and the Milky Way, I expect to see the halo be more stretched out in the direction facing M31. I also expect to see the dark matter halo be more stretched out at pericenter and less stretched out at apocenter due to the increased tidal forces on M33 from M31 at pericenter. I expect the oscillations of how stretched the dark matter halo is to increase in amplitude towards the end of the simulation due to M31 now containing both its original mass and the mass of the Milky Way. Since the analytical Jacobi radius only uses the mass from M31, and not the mass from the Milky Way, I expect to see a drop off in mass density much closer to the center of mass of the galaxy after the merger than what the analytical Jacobi radius would suggest. 
+
+\section{results}
+
+\textbf{Figure 3} is a graph of the amount of mass obtained within a cylinder along each axis as its radius expands to the Jacobi Radius at that snapshot. This is the technique demonstrated in \textbf{figure 2}. The specific snapshots that are being looked at are 000, 300, 380, and 705. As you can see, the galaxy initially starts out being spherical, with all 3 mass enclosed lines appearing to be identical. However, that is not the case in the other three graphs, where we see significantly more mass enclosed within the cylinders along the x and y axes than the cylinder along the z axis at the Jacobi radius. This leads to the conclusion that the dark matter halo starts out being spherical, and then transforms into an oblate spheroid as a result of the galactic merger.
+
+
+
+\begin{figure}
+                \centering
+                \includegraphics[width=0.7\linewidth]{Fig3.png}
+                \label{fig:enter-label}
+            \caption{Contains the mass density functions for 3 cylinders, 1 along the x axis(blue), y axis(red), and z axis(green). The snaps being looked at are 000, 300, 380, and 705. This represents the mass enclosed within the cylinders as a function of their radius. The range of the radius is from zero to the Jacobi radius. Through these four snaps we can see that the shape of the spheroid appears to evolve from being something close to a sphere at the start of the simulation to an oblate spheroid as the merger takes place.}
+            \end{figure}
+
+\textbf{Figure 4} takes the values under the graphs from \textbf{figure 1}, but for several more snapshots, and graphs them as percentage values out of the total mass enclosed in any cylinder at that snaps analytical Jacobi radius. This is graphed as a function of time in Gyrs. The primary reason for turning the values into percentages is to prevent the stretching of the galaxy from making it harder to analyze the evolution of the shape within the Jacobi radius. It’s much easier to compare the axes to one another at different snaps when the three lines being graphed always add up to one for each snapshot. We can now see the evolution of the shape of M33 at the analytical Jacobi radius throughout the whole simulation. At the time of the merger, it is clear that the average z distance is much smaller than the average x and y distances. However, as we enter into the higher snaps, we can see that the x, y, and z axis cylinders all look quite different, this leads me to the conclusion that M33 actually goes from being spherical before the merger, to oblate around the time of the merger, and then to triaxial at a period far after the merger.
+
+\begin{figure}
+                \centering
+                \includegraphics[width=0.7\linewidth]{Fig4.png}
+                \label{fig:enter-label}
+            \caption{This takes the mass enclosed in the cylinders from \textbf{figure 3} at the Jacobi radius specifically (the final value in the graphs from \textbf{figure 3}), normalizes them to make them percentage values for each snapshot, and graphs them as a function of time in Gyr. This allows us to analyze the shape of M33 at the Jacobi radius at several different snaps. Through this, we can actually see that there is much more mass enclosed along the y axis cylinder (red) than the x axis cylinder (blue) at the higher snaps. The z axis cylinder (green) still consistently contains less mass than the x and y cylinders. This shows us that the M33 halo is actually triaxial at points far after the merger.}
+            \end{figure}
+
+\textbf{Figure 5} contains a density mass function graph of the M33 dark matter halo for the 000, 300, 380, and 705 snapshots. These snapshots were chosen for the same reason that they were chosen for figure 3. Through this we can see that all four snaps have a pretty sharp drop off below the respective analytic Jacobi radius at their snapshots. This means that the dark matter is much more dense near the center of the galaxy than the rest of the galaxy.
+
+\begin{figure}
+                \centering
+                \includegraphics[width=0.7\linewidth]{Fig5.png}
+                \label{fig:enter-label}
+            \caption{This graph contains the mass density profiles in $1e10Msun/Kpc^3$ for four different snapshots as a function of radius in Kpc. The four snapshots that are graphed are 000 (blue), 300 (orange), 380 (green), 705 (red). Here we can see that mass drops off before the analytical Jacobi radius for all 4 snapshots.}
+            \end{figure}
+
+\textbf{Figure 6} contains 2 graphs. In order to see how the stretch of the halo evolves, I have examined data within a radius that is less than the Jacobi radius of every snap. I have chosen a radius of 12 kpc because it also appears to line up with the observational Jacobi radii of our snaps in \textbf{figure 4}. This way, the size of the area that we are looking at isn't increasing. This leads us to the bottom two graphs, where I graphed the average r distance within 25 kpc in graph 3, and the average x, y, and z distances within a sphere of radius 25 kpc. Here, we can see that the average particle distance from the center of mass remains roughly constant before 7 Gyrs. However, we can also see that the average distance of the particle from the center of mass at a time after 7 Gyrs is directly proportional to the to the distance between the two galaxies.
+
+
+\begin{figure}
+                \centering
+                \includegraphics[width=0.7\linewidth]{Fig6.png}
+                \label{fig:enter-label}
+            \caption{This graphs the analytic Jacobi radius (which is proportional to the distance) over two graphs. The first graph contains the average distance of dark matter halo particles from the center of mass of M33 for particles within 12 Kpc of the center of mass. This is then graphed against time in Gyrs to see how it evolves as the merger occurs. The second graph contains that average x, y, and z distance from the center of mass of M33 of particles within 12 Kpc of the center of mass, graphed against time in Gyrs. Here we can clearly see that the average r, x, y, and z distances are all roughly constant until after the merger, when M31 is much more massive and closer to M33. At this point we see that average particle distance is proportional to the analytic Jacobi radius and the distance between M31 and M33}
+            \end{figure}
+
+
+\section{discussion}
+
+
+	As time goes on, the shape of M33 at its analytical Jacobi radius evolves from its initial spherical shape, to an oblate spheroid around the time of the merger, to a triaxial spheroid far after the merger at a time of roughly 7 Gyrs in the simulation. This satisfies my hypothesis. I believe that the difference between how stretched out each axis is at higher snaps has to do with the distance vector between the two galaxies' centers of mass potentially being more aligned with different axes axis at different time. This reduces the stretching of the halo along axes perpendicular to the distance vector between M31 and M33 while also stretching the halo out along the parallel axis by pulling on it gravitationally.
+
+    Since dark matter makes up most of the mass of the galaxy, and is not necessarily evenly distributed throughout a galaxy, it can be really difficult to predict how the dark matter will stretch as the merger happens. This can help us model the shape of the dark matter halo using how much it stretched out to infer the total mass and density of the halo at the first snap in the simulation. The change in shape of the halo means that we can also assume that it pulls on the visible matter with different strengths throughout the simulation. We can use this to help support the theory that dark matter is causing the irregular shapes of some of the stellar streams located around the milky way (\citet{Banik2018}). More of the matter within the halo being closer to the xy plane would lead to it having a stronger gravitational effect on the visible matter within the disk. The halo doesn’t always evolve with its galaxy as a result of a collision (\citet{Clowe2006}).
+
+    Most of the uncertainties stem from the fact that I am just looking at the relationship between M33 and M31 during this merger. At this point, none of my calculations account for the fact that the Milky Way should also have large effects on the calculated Jacobi Radius between M33 and the Andromeda galaxy. While I do believe that the cylinders are providing me with accurate data, the lack of any sort of limitation on the cylinder height could be causing me to look at particles that have been launched outside of the galaxy. Measuring the Jacobi radius and using that radius for every cylinder could also be quite limiting, since the Jacobi radius is only relevant in the direction pointing from the center of mass of M33 towards the center of mass of M31. a particle can be outside of the Jacobi radius and not be at immediate risk of being stolen if it is on an opposite side of the galaxy as M31 is.
+
+
+        The analytical Jacobi radius does not line up with the drop off of the mass density profiles. the actual Jacobi radius appears to be much smaller than the analytic Jacobi radius. It also does not appear to vary by a lot. This satisfies my hypothesis that the observed Jacobi radius would be smaller at higher snapshots. However, I did not anticipate the observed Jacobi radius being smaller at earlier snapshots as well.
+        
+        The analytical Jacobi radius not lining up with the observed 
+        Jacobi radius means that the amount of a galaxies dark matter halo that can be stripped by a nearby galaxies is much larger than expected. This also changes our expectations of how the halo is shaped after a galaxy merger. In addition, this could mean that the dark matter halo is much more concentrated near the center of the galaxy than other parts of the galaxy.
+
+        A big point of uncertainty comes from the radius intervals in which I am running the mass density profile function. Due to the softening length in the simulation made by \citet{vanderMarel2012} being at 1 kpc, our data would potentially be ruined by setting an interval length of anything less than 5 times that amount. This means that the smallest interval that can be used is 5 Kpc. This also means that our center of mass of the system could be off by a few Kpcs. 
+
+
+    When the average distance between M33 and the merged M31 and Milky Way galaxies decreases in the latter half of the simulation, we see a direct corelation between the average particle distance and from the center of mass within a specified radius less than the Jacobi radius and the distance between M33 and M31. The time in which this relationship becomes visible is roughly the same time that we see the shape of M33 become triaxial in \textbf{figure 4}. This implies that the gravitational pull of the combined masses of M31 and the Milky Way at shorter distances from M33 has massive tidal effects on M33 that must flatten M31. 
+
+    This result can help us determine the required mass and distance required for a host galaxy to be able to alter the shape of a galaxy in a significant way. This can help us to model galaxy mergers much more accurately in the future. 
+
+    The small softening length could lead to the data being slightly off of the actual value
+
+
+    After the combined galaxy of M31 and the Milky Way gets close enough to M33, we can see that the average radius of the mass within a distance less than the Jacobi radius is directly proportional to the distance between M31 and M33. This completely defies my initial hypothesis. I believe that this can be explained by M31 pulling the particles on the side of the center of mass closest to it outside of the specified radius. This also means that particles on the opposite side of the center of mass of M33 as M31 is would be pulled inwards, towards the center of mass.  This would cause the average particle distance within the radius to decrease M31 has a stronger gravitational pull at pericenter, and the average distance to increase as M31 was a weaker gravitational pull at apocenter and some of the mass can be pulled back into the radius.
+
+    Knowing that these oscillations of how stretched out the particles are within the Jacobi radius exist and understanding how and why they oscillate allows us to vastly improve our understanding of how dark matter can be effected tidally, which allows for us to better predict how its shape will evolve due to the gravitational pull of nearby galaxies.
+
+    Due to the softening length of 1 Kpc, working with data within 12 Kpc could cause some slight inaccuracies in our data. 
+
+\section{Conclusions}
+    During a galaxy merger, the shape of the dark matter halo of a nearby satellite can be noticeably altered due to the tidal forces of the merging galaxies. Understanding how the shape of the halo evolves throughout the merger can give us a better understanding of how dark matter interacts with both visible matter and other dark matter. Using a simulation of the future merger between M31 and the Milky Way galaxies used for \citet{vanderMarel2012}, I am able to examine how the dark matter halo of a satellite galaxy evolves as its host galaxy and another galaxy merge. I am examining how the dark matter halo of M33 evolves within it's Jacobi radius from M31 as M31 merges with the Milky Way Galaxy.
+
+    I found that the shape of M33 evolves from a spherical shape before the simulation, to an oblate shape during the galactic merger of M31 and the Milky Way, to a triaxial shape a couple Gyrs after the Merger.  This means that a dark matter halo behaves the same way as visible matter does due to the tidal forces of nearby massive objects. This result agreed with my initial hypothesis.
+
+    I found that the analytical Jacobi radius did not match with the radius where the drop off in mass density of the dark matter halo occurred. This leads me to believe that the dark matter halo is much more concentrated towards the center of the galaxy than in other parts of the galaxy. This 
+
+    I found that the shape of the dark matter halo of M33 is effected much more by M31 after it completes its merger with the Milky Way galaxy and its distance at apocenter decreases throughout the simulation. This could help  us analyze the distribution of the dark matter halo by looking at how much larger of an effect the gravitational pull of M31 had on M33 after it gained mass and was constantly closer to M33 towards the end of the simulation. This agrees with my hypothesis.
+
+    I found that the average distance of dark matter halo particles from the center of mass of M33 within the a radius smaller than the Jacobi radius was directly proportional to the distance between M31 and M33 once the tidal forces of M31 on M33 increased later on in the simulation.
+
+    I think defining my coordinate system in a way that one of the axes was facing towards M31 would more accurately allow for me to examine how M31 is causing the shape the dark matter halo of M33 to change along each axis. Also, accounting for the mass of the Milky Way while computing the analytical Jacobi Radius could result in an analytical Jacobi radius much more consistent with the observed Jacobi radius.
+
+\section{Acknowledgments}
+
+Astropy (Astropy Collaboration et al. 2013; Price-Whelan et al. 2018 doi: 10.3847/1538
+3881/aabc4f)
+matplotlib Hunter (2007),DOI: 10.1109/MCSE.2007.55
+
+numpy van der Walt et al. (2011), DOI : 10.1109/MCSE.2011.37
+
+scipy Jones et al. (2001–),Open source scientific tools for Python. http://www.scipy.org/
+
+ipython Perez \& Granger (2007), DOI : 10.1109/MCSE.2007.53
+
+Pandas The pandas development team. pandas-dev/pandas: Pandas. Zenodo. https://doi.org/10.5281/zenodo.3509134 (2020)
+
+We respectfully acknowledge the University of Arizona is on the land and territories of In
+digenous peoples. Today, Arizona is home to 22 federally recognized tribes, with Tucson being
+ home to the O’odham and the Yaqui. The University strives to build sustainable relation
+ships with sovereign Native Nations and Indigenous communities through education offerings,
+ partnerships, and community service.
+
+\bibliographystyle{mnras}
+\bibliography{references} 
+\cite{}
+\label{lastpage}
+\end{document}
